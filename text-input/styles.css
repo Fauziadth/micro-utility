@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    --bgcolor : rgb(247, 247, 247);
+    --textColor: #111;
+
+    background-color: var(--bgcolor);
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textinput {
+    position: relative;
+}
+
+.textinput input {
+    background-color: var(--bgcolor);
+    border: 1px solid #363636;
+    border-radius: 2px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.textinput input:focus {
+    outline: 0;
+    border: 1px solid #3183ff;
+    box-shadow: 0px 0px 2px #3183ff;
+}
+
+
+.textinput p {
+    position: absolute;
+    font-size: 15px;
+    color: #9c9c9c;
+    top: 15px;
+    left: 15px;
+    transition: 0.2s;
+    background-color: var(--bgcolor);
+    padding: 0px 5px;
+    cursor: text;
+}
+
+.textinput p.top {
+    color: #363636;
+    top: -9px;
+    left: 10px;
+    font-size: 12px;
+}
+
+.textinput input:focus + * p {
+    color: #3183ff;
+}
+
