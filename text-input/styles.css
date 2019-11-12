@@ -19,6 +19,7 @@ body{
 
 .textinput {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .textinput input {
